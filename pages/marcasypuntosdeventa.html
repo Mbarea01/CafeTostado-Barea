@@ -4,109 +4,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	
+    <!-- Mi CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- Iconos -->
     <script src="https://kit.fontawesome.com/86f1c67918.js" crossorigin="anonymous"></script>
+
+    <!-- Icono de pagina -->
     <link rel="shortcut icon" href="../images/favicon.png">
-    <title>Nosotros</title>
+
+    <title>Cafe Tostado-Home</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid" >
-            <a class="navbar-brand img-fluid" href="../index.html">  <img src="../images/logo1.png" alt="LOGO" ></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="../index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="../pages/cafeterias.html">CAFETERIAS</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="../pages/marcasypuntosdeventa.html">MARCAS Y PUNTOS DE VENTA</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="../pages/Nosotros.html">NOSOTROS</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="../pages/contacto.html">CONTACTO</a>
-                </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+	<div class="contenedor">
+		<header class="encabezado">
+			<div class="encabezado__logo">
+				<a href="../index.html">
+					<img src="../images/logo1.png" alt="Logo de cafe Tostado">
+				</a>
+			</div>
+			<nav class="encabezado__menu">
+				<ul>
+					<li><a href="../index.html">HOME</a></li>
+					<li><a href="../pages/cafeterias.html">CAFETERIAS</a></li>
+					<li><a href="../pages/marcasypuntosdeventa.html">MARCAS Y PUNTOS DE VENTA</a></li>
+					<li><a href="../pages/Nosotros.html">NOSOTROS</a></li>
+					<li><a href="../pages/contacto.html">CONTACTO</a></li>
+				</ul>
+			</nav>
+		</header>
+
+
         <div class="whatsapp">
-            <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-3x" style="color: black;"></i></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-3x" style="color: black; width: "></i></a>
         </div>
 
-        <main >
-            <h1 class="titulo">MARCAS Y PUNTOS DE VENTA</h1>
-        </main>
-        <!-- <section class="seccion">-->
-        <section class="Marcas">    
-            <h2 class="Nombre">MARCAS</h2>
-            <!-- <div class="Contenido">-->
-            <div class="grilla">
-                <a href="https://www.cabrales.com/" target="_blank"><img src="../images/cabrales.png" alt="cabrales" > </a>
+        
 
-                <a href="https://brunobrown.com.ar/" target="_blank"><img src="../images/BrunoBrown.jpg" alt="BrunoBrown" ></a>
+        <main class="principal" data-aos="fade-right">
+			<div class="principal__texto">
+				<h1>MARCAS Y PUNTOS DE VENTA</h1>
+			</div>
+		</main>
 
-                <a href="https://www.starbucks.com.ar/" target="_blank"><img src="../images/starbucks.jpg"  alt="starbucks" ></a>
+        <section data-aos="fade-right" class="seccion">
+			<div class="marcas">
+				<p class="marcas__titulo"> Marcas </p>
+				<div class="img01">
+					<a href="Bruno Brown">
+						<a href="https://brunobrown.com.ar/" target="_blank"><img src="../images/BrunoBrown.jpg" alt="BrunoBrown" ></a>
+					</a>
+					<p class="img_descripcion"> Bruno Brown </p>
+				</div>
+				<div class="img02">
+					<a href="Cabrales">
+						<a href="https://www.cabrales.com/" target="_blank"><img src="../images/cabrales.png" alt="cabrales" > </a>
+					</a>
+					<p class="img_descripcion"> Cabrales </p>
+				</div>
+				<div class="img03">
+					<a href="Starbucks">
+						<a href="https://www.starbucks.com.ar/" target="_blank"><img src="../images/starbucks.jpg"  alt="starbucks" ></a>
+					</a>
+					<p class="img_descripcion"> Starbucks </p>
+				</div>
+				<div class="img04">
+					<a href="https://morenita.com.ar/" target="_blank"><img src="../images/lamorenita.png" alt="La Morenita" ></a>
+					<p class="img_descripcion"> La Morenita </p>
+				</div>
+				<div class="img05">
+					<a href="https://www.lavirginia.com.ar/" target="_blank"><img src="../images/laVirginia.png" alt="cabrales" ></a>
+					</a>
+					<p class="img_descripcion"> La Virginia </p>
+				</div>
+				<div class="img06">
+					<a href="https://www.cafemartinez.com/" target="_blank"><img src="../images/cafeMartinez.jpg" alt="Cafe Martinez" ></a>
+					</a>
+					<p class="img_descripcion"> Cafe Martinez </p>
+				</div>
+				<div class="img07">
+					<a href="https://bonafide.com.ar/" target="_blank"><img src="../images/bonafide.jpg" alt="BrunoBrown" ></a>
+					<p class="img_descripcion"> Bonafide </p>
+				</div>
+				<div class="img08">
+					<a href="http://www.segafredoargentina.com.ar/home/index.php" target="_blank"><img src="../images/segafredo.png" alt="Segafredo" ></a>
+					<p class="img_descripcion"> Segafredo </p>
+				</div>
+			</div>
+		</section>
 
-                <a href="https://morenita.com.ar/" target="_blank"><img src="../images/lamorenita.png" alt="La Morenita" ></a>
+        <section data-aos="fade-right" class="seccion">
+			<div class="marcas">
+				<p class="marcas__titulo"> PUNTOS DE VENTA </p>
+				<div class="img01">
+					<a href="Bruno Brown">
+						<a href="https://www.google.com/maps/place/BRUNO+BROWN/@-32.9071766,-68.8471434,17z/data=!3m1!4b1!4m5!3m4!1s0x967e09e2cf2330e5:0xd2033d9be86657f9!8m2!3d-32.9071766!4d-68.8449547?hl=es-419" target="_blank"><img src="../images/BrunoBrown.jpg" alt="Bruno Brown" ></a>
+					</a>
+					<p class="img_descripcion"> Bruno Brown </p>
+				</div>
 
-                <a href="https://www.lavirginia.com.ar/" target="_blank"><img src="../images/laVirginia.png" alt="cabrales" ></a>
+                <div class="img02">
+					<a href="Cumbal">
+						<a href="https://www.google.com/maps/place/Caf%C3%A9+Cumbal+Tostadores+de+Caf%C3%A9/@-32.935642,-68.8447947,17z/data=!3m1!4b1!4m5!3m4!1s0x967e0bdb0d7dcdb7:0xe7ecc1c6bf38a248!8m2!3d-32.935642!4d-68.842606?hl=es-419" target="_blank"><img src="../images/Cumbal.png" alt="Cumbal"> </a>
+					</a>
+					<p class="img_descripcion"> Cumbal </p>
+				</div>
+			
+                <div class="img03">
+					<a href="Chango Mas">
+						<a href="https://www.google.com/maps/search/chango+mas+mendoza/@-32.9650894,-68.8109906,11z/data=!3m1!4b1?hl=es-419" target="_blank"><img src="../images/changomas.jpg" alt="chango mas"> </a>
+					</a>
+					<p class="img_descripcion"> Chango Mas </p>
+				</div>
 
-                <a href="https://www.cafemartinez.com/" target="_blank"><img src="../images/cafeMartinez.jpg" alt="Cafe Martinez" ></a>
+                <div class="img04">
+					<a href="Jumbo">
+						<a href="https://www.google.com/maps/search/jumbo/@-32.9478685,-68.8831562,13z/data=!3m1!4b1?hl=es-419" target="_blank"><img src="../images/jumbo.jpg" alt="jumbo"> </a>
+					</a>
+					<p class="img_descripcion"> Jumbo </p>
+				</div>
 
-                <a href="https://bonafide.com.ar/" target="_blank"><img src="../images/bonafide.jpg" alt="BrunoBrown" ></a>
+                <div class="img05">
+					<a href="Carrefour">
+						<a href="https://www.google.com/maps/search/carrefour/@-32.9478587,-68.8831563,13z/data=!3m1!4b1?hl=es-419" target="_blank"><img src="../images/carrefour.png" alt="carrefour"> </a>
+					</a>
+					<p class="img_descripcion"> Carrefour </p>
+				</div>
+			</div>
+		</section>
 
-                <a href="http://www.segafredoargentina.com.ar/home/index.php" target="_blank"><img src="../images/segafredo.png" alt="Segafredo" ></a>
 
-                <a href="https://www.dolce-gusto.com.ar/" target="_blank"><img src="../images/nescafe1.jpg" alt="Nescafe" ></a>
-
-                <a href="https://www.lavazza.com.ar/es_LA.html" target="_blank"><img src="../images/lavazza1.jpg" alt="Lavazza" ></a>
-            </div>
-        </section>
-
-        <section class="Marcas">
-            <h3 class="titulo">PUNTOS DE VENTA</h3>
-            <div class="grilla2">
-                <img src="../images/BrunoBrown.jpg" alt="Bruno bruwn">
-            
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13398.636968673905!2d-68.8449547!3d-32.9071766!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2033d9be86657f9!2sBRUNO%20BROWN!5e0!3m2!1ses-419!2sar!4v1658874725604!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
-
-                <img src="../images/Cumbal.png" alt="Cumbal">
-            
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.58211039427!2d-68.84479468525437!3d-32.93563747866009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0bdb0d7dcdb7%3A0xe7ecc1c6bf38a248!2sCaf%C3%A9%20Cumbal%20Tostadores%20de%20Caf%C3%A9!5e0!3m2!1ses-419!2sar!4v1658874873186!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                <img src="../images/modoBarista.png" alt="Modo Barista" >
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9515212669335!2d-58.427928985195216!3d-34.60538736509263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb547c063fcb5%3A0x50c7eb973f831e3b!2sModo%20Barista!5e0!3m2!1ses-419!2sar!4v1658874961601!5m2!1ses-419!2sar"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                <img src="../images/changomas.jpg" alt="chango mas">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107180.27249829001!2d-68.89836790770453!3d-32.91446415905571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e095a2aee5797%3A0xbcf42ed81301e076!2sHiper%20Chango%20M%C3%A1s%20-%20Walmart%20Mendoza!5e0!3m2!1ses-419!2sar!4v1658875042969!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                <img src="../images/jumbo.jpg" alt="jumbo">
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.322369428585!2d-68.84128578566981!3d-32.91608008093019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0966722ae029%3A0x402d53704dae78d8!2sJumbo%20Mendoza!5e0!3m2!1ses-419!2sar!4v1658875243586!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                <img src="../images/carrefour.png" alt="carrefour">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53589.16678994063!2d-68.87411687455099!3d-32.916065415660256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0bd9d21bed0b%3A0x174732f485a2c7e8!2sCarrefour%20Market!5e0!3m2!1ses-419!2sar!4v1658875369239!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            </div>
        
-        </section>
-
-    
-    
-
-
-
-
-
    
         <footer class="pie" >
             <p class="redes">Seguinos en nuestras redes</p>
@@ -123,7 +159,17 @@
             </div>
         </footer>
     </div>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+	<!-- Animaciones -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration:1000
+		});
+	</script>
+	<!-- Iconos -->
+	<script src="https://kit.fontawesome.com/c08f3196dd.js" crossorigin="anonymous"></script>
 </body>
 </html>

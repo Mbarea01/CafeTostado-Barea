@@ -4,55 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	
+    <!-- Mi CSS -->
     <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Iconos -->
     <script src="https://kit.fontawesome.com/86f1c67918.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="../images/favicon.png">
-    <title>Nosotros</title>
+
+    <!-- Icono de pagina -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>Cafe Tostado-Cafeterias</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid" >
-            <a class="navbar-brand img-fluid logo" href="index.html">  <img src="images/logo1.png" alt="LOGO" ></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="../CafeTostado-Barea/pages/cafeterias.html">CAFETERIAS</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="../CafeTostado-Barea/pages/marcasypuntosdeventa.html">MARCAS Y PUNTOS DE VENTA</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="../CafeTostado-Barea/pages/Nosotros.html">NOSOTROS</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="../CafeTostado-Barea/pages/contacto.html">CONTACTO</a>
-                </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+	<div class="contenedor">
+		<header class="encabezado">
+			<div class="encabezado__logo">
+				<a href="index.html">
+					<img src="images/logo1.png" alt="Logo de cafe Tostado">
+				</a>
+			</div>
+			<nav class="encabezado__menu">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="pages/cafeterias.html">CAFETERIAS</a></li>
+					<li><a href="pages/marcasypuntosdeventa.html">MARCAS Y PUNTOS DE VENTA</a></li>
+					<li><a href="pages/Nosotros.html">NOSOTROS</a></li>
+					<li><a href="pages/contacto.html">CONTACTO</a></li>
+				</ul>
+			</nav>
+		</header>
+
 
         <div class="whatsapp">
             <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-3x" style="color: black; width: "></i></a>
         </div>
 
-        <main class="principal">
-            <div>
-                <h1 class="titulo">CAFE TOSTADO</h1>
-                <p>Este blog es para los mendocinos amantes de tomar un buen cafe, lleno de propiedades y de un sabor unico. Para las personas turistas tambien que les gusta y disfrutan del sabor del cafe tostado y para los que no saben de que se trata ese tipo de cafe yo aca se los voy a contar todo, tambien voy a enseñarles de que forma tomarlo, donde conseguirlo y adonde pasar una tarde unica disfrutando de un buen cafe. </p>
-            </div>
-            <img class="intro_img" src="images/cafeteria.jpg" alt="Granos de cafe Tostado" width="350px" height="300px">
-        </main>
-    
-    
-    
+        <main class="principal" data-aos="fade-right">
+			<div class="principal__texto">
+				<h1>CAFE TOSTADO</h1>
+				<p> Este blog es para los mendocinos amantes de tomar un buen cafe, lleno de propiedades y de un sabor unico. Para las personas turistas tambien que les gusta y disfrutan del sabor del cafe tostado y para los que no saben de que se trata ese tipo de cafe yo aca se los voy a contar todo, tambien voy a enseñarles de que forma tomarlo, donde conseguirlo y adonde pasar una tarde unica disfrutando de un buen cafe.</p>
+			</div>
+			<img class="principal__img" src="images/ImagenPrincipal.jpg" alt="cafe">
+		</main>
+
+        <section class="seccion"  data-aos="fade-right">
+			<div class="seccion__texto">
+				<p class="seccion__titulo"> TIPOS DE TOSTADOS </p>
+				<p> Café tueste claro o ligero: acidez pronunciada, taza limpia, predominan sabores del origen. <br>
+                    Café tueste medio: balance entre acidez, dulzor y aromas. <br>
+                    Café tueste medio-oscuro: acidez baja, notas a chocolate, mayor textura que los anteriores cafés. <br>
+                    Café tueste oscuro: notas a chocolate oscuro, mucha textura. </p>
+			</div>
+			<div class="seccion__imagenes">
+				<img src="images/TiposDeCafe.jpg" alt="Cafe Tostado" >
+			</div>
+		</section>
+
+        <section class="seccion" data-aos="fade-left">
+			<div class="seccion__texto seccion__texto--orden">
+				<p class="seccion__titulo"> TIPOS DE CAFE </p>
+				<p> Hay un monton de formas para preparar un rico cafe! Aca te dejo algunas...</p>
+			</div>
+				
+			<div class="seccion__imagenes1 seccion_imagenes--orden">
+				<img src="images/Preparaciones.jpg" alt="Preparaciones">
+			</div>
+		</section>
+
+        <section class="seccion" data-aos="fade-left">
+			<div class="seccion__texto seccion__texto--orden">
+				<p class="seccion__titulo"> TIPOS DE PREPARACIONES </p>
+				<p> Tenemos variedad de productos salados para acompañar en tu visita!
+					Como tostados, sandwichs, medialunas rellenas y más
+				</p>
+			</div>
+				
+			<div class="seccion__imagenes seccion_imagenes--orden">
+				<img src="images/TiposDeCafetera.jpg" alt="tipos de cafeteras">
+			</div>
+		</section>
+
+
+
+
+
+       
         <footer class="pie" >
             <p class="redes">Seguinos en nuestras redes</p>
         
@@ -70,7 +114,16 @@
         
         </footer>
     </div>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+	<!-- Animaciones -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration:1000
+		});
+	</script>
+	<!-- Iconos -->
+	<script src="https://kit.fontawesome.com/c08f3196dd.js" crossorigin="anonymous"></script>
 </body>
 </html>

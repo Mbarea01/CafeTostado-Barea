@@ -1,59 +1,131 @@
+
 *{
-    margin: 0 ;
-    padding: 0 ;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
+
 body{
     background-color: rgb(233, 203, 183);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/*.contenedor{
+/* Estilos */
+
+.contenedor{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
     justify-content: space-between;
-}*/
+}
+
+/* Icono de whatsapp */
 
 .whatsapp{
-   display: none;
-}
-
- /*estilos del index.home*/
-
-/*Tamaño logo*/
-nav div a img{
-    width: 40%;
-}
-
-/*Diseño menu*/
-main h1{
-    font-size: 5rem;
-}
-nav{
-    border-bottom: 6px solid rgb(151, 84, 36);
-}
-nav div{
-    background-color: rgb(68, 29, 11);
-}
-
-
-/*main*/
-
-.titulo{
-    text-align: center;
-    font-size: 2rem;
-    color: rgb(46, 26, 19);
-}
-
-.principal div p{
-    text-align: center;
-}
-.intro_img{
     display: none;
 }
+
+/* Header */
+.encabezado{
+    width: 100%;
+    background-color: rgb(68, 29, 11);
+
+    height: 10rem;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.encabezado__logo{
+    width: 40%;
+}
+.encabezado__logo a img{
+    width: 8rem;
+    display:block;
+    margin:auto;
+}
+
+.encabezado__menu ul li{
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.encabezado__menu ul li a{
+    text-decoration:none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: beige;
+}
+
+/* Main */
+
+.principal{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.principal__texto{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.principal__texto h1{
+    font-size: 3rem;
+    color: #301804;
+    margin-bottom: 0.5rem;
+}
+
+.principal__img{
+    display: none;
+}
+
+
+/* Section */
+
+.seccion{
+    background-color: rgb(151, 84, 57);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.seccion__texto{
+    text-align: center;
+    color: #1a0c01;
+    font-size: 1.1rem;
+    font-weight: 300;
+    width: 70%;
+}
+
+.seccion__titulo{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.seccion__imagenes img{
+    width: 60%;
+    display:block;
+    margin:auto;
+
+}
+.seccion__imagenes1 img{
+    width: 100%;
+    display:block;
+    margin:auto;
+}
+
 
 .pie{
     background-color: rgb(68, 29, 11);
@@ -76,87 +148,51 @@ nav div{
     color: beige;
 }
 
+/* Carta */
 
-
-/*Estilos cafeteria*/
-
-.seccion {
-    background-color: rgb(151, 84, 57);
-    display: flex;
-    width: 90%;
-    padding: 1.25rem 0 ;
-    flex-direction: column;
-    align-items: center;
-    border-radius:10px;
-    
-}
-.Nombre{
-    margin: 0.625rem 0.625rem;
-    font-size: 2.5rem;
-    text-align: center;
-    justify-content: center;
-}
-
-.Contenido{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-.Contenido p{
-    text-align: center;
-}
-
-.Marcas{
-    background-color: rgb(151, 84, 57);
+.marcas{
     width: 90%;
     font-weight: bold;
-    display: flex;
-    flex-direction: column;
-}
-
-.Marcas a img{
-    width: 70%;
-    display:block;
-    margin:auto;
-}
-
-.Marcas .grilla,.grilla2{
     display: grid;
-    grid-template-rows: repeat(auto,1fr);
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr repeat(8,1fr);
+    grid-template-columns:auto;
 
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
-    padding-bottom: 1rem;
+
+    row-gap: 1rem;
+
 }
 
-.Marcas div img,iframe{
-    width: 70%;
-    display:block;
-    margin:auto;
-}
-
-.Nombre--cafeteria{
-    font-size: 1.5rem;
+.marcas__titulo{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
     text-align: center;
 }
 
-
-
-
-/* Formulario */
-
-section div{
-	
-	background-color:rgb(151, 84, 57);
-    color: beige;
-    width: 80%;
-    
+.img_descripcion{
+    margin-top: 0.5rem;
+    text-align: center;
 }
 
+/* Bootstrap */
+
+.container-fluid{
+    --bs-gutter-x: 0;
+}
+
+.card__formulario{
+    width:70%;
+}
+
+.card__boton{
+    background-color: rgb(68, 29, 11);
+    width: 100%;
+}
+.formulario{
+    background-color: rgb(151, 84, 57);
+}
 
 @media screen and (min-width: 480px) and (max-width: 991px)  {
 
@@ -170,14 +206,23 @@ section div{
     }
 
     /* Header */
-    .encabezado{
-        height: 14rem;
-        padding: 1rem;
+    .encabezado{    
+        flex-direction: column;
+        height: 12rem;
+        gap: 1rem;
     }
-   
-    nav div a img{
-        width: 30%;
+    .encabezado__logo{
+        height: 50%;
     }
+    .encabezado__logo a img{
+        width: 5.5rem;
+    }
+
+    .encabezado__menu ul{
+        display: flex;
+        gap: 1rem;
+    }
+
 
     /* Main */
     .principal{
@@ -194,69 +239,215 @@ section div{
         width: 75%;
         align-content: center;
     }
-    /* marcas */
-    .Marcas .grilla{
-        grid-template-rows: repeat(auto,1fr);
-        grid-template-columns: 1fr 1fr 1fr;
+
+    /* Carta */
+    .marcas{
+        grid-template-rows: 0.3fr repeat(4,1fr);
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+                            "titulo titulo"
+                            "img01 img02"
+                            "img03 img04"
+                            "img05 img06"
+                            "img07 img08";
+        justify-content: center;
+        row-gap: 1rem;
     }
-    
+    .marcas div a img{
+        width: 70%;
+        display:block;
+        margin:auto;
+    }
+
+    .marcas__titulo{
+        grid-area: titulo;
+    }
+    .img01{
+        grid-area: img01;
+    }
+
+    .img02{
+        grid-area: img02;
+    }
+
+    .img03{
+        grid-area: img03;
+    }
+
+    .img04{
+        grid-area: img04;
+    }
+
+    .img05{
+        grid-area: img05;
+    }
+
+    .img06{
+        grid-area: img06;
+    }
+
+    .img07{
+        grid-area: img07;
+    }
+
+    .img08{
+        grid-area: img08;
+    }
+   
+    /* Bootstrap */
+
+    .card__formulario{
+        width: 10rem;
+    }
+
 }
 
 @media screen and (min-width: 992px){
+
+    /* Icono de whatsapp */
     .whatsapp{
         display: block;
         position: fixed;
-        right: 2rem;
-        bottom: 2rem;
-        z-index: 3;
+        right: 0.2rem;
+        bottom: 0.5rem;
+        z-index: 2;
     }
 
     /* Header */
     .encabezado{
-        height: 8rem;
-        padding: 1rem;
-        display: flex;
+        height: 5rem;
+        flex-direction: row;
         justify-content: space-around;
+        position: sticky;
+        top: 0;
+        z-index: 2;
     }
-    nav div a img{
-        width: 30%;
+
+    .encabezado__menu ul{
+        display: flex; 
+        margin: 0;
+        padding-left: 0;
+        gap: 2rem;
     }
-    
-   
+
+    .encabezado__menu ul li{
+        padding: 0.5rem;
+        border:1px solid rgb(190, 96, 53);
+	    border-radius:1rem;
+    }
+
+    .encabezado__logo{
+        margin: 0;
+    }
+    .encabezado__logo a img{
+        width: 4rem;
+        margin-bottom: 0;
+    }
+
     /* Main */
     .principal{
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
     }
-    .principal p{
-        font-size: 1.5rem;
+
+    .principal__texto{
+        width: 50%;
     }
-    .intro_img{
+    .principal__img{
         display: block;
-        margin: auto;
-    }
-    .titulo{
-        font-size: 5rem;
-    }
-    .Nombre--cafeteria{
-        font-size: 3rem;
-    }
-    
-    .grilla2 iframe,img{
-        width: 70%;
-        height: 100%;
+        width: 50%;
     }
 
-    .Marcas .grilla{
-        grid-template-rows: repeat(auto,1fr);
-        grid-template-columns: 1fr 1fr 1fr;
+    /* Section */
+    .seccion{
+        flex-direction: row;
+        padding: 2rem;
+        justify-content: center; 
     }
-    .Contenido p{
-        font-size: 1.5rem;
+    .seccion__texto{
+        width: 50%;
+    }
+    .seccion__imagenes{
+        width: 50%;
+    }
+
+    .seccion__texto--orden{
+        order: 2;
+    }
+    .seccion__imagenes--orden{
+        order: 1;
+    }
+
+    /* Marcas */
+    .marcas{
+        grid-template-rows: 0.3fr repeat(3,1fr);
+        grid-template-columns: repeat(7,1fr);
+        row-gap: 1rem;
+    }
+    .marcas div a img{
+        width: 100%;
+    }
+
+    .marcas__titulo{
+        grid-row: 1/2;
+        grid-column: 3/6;
+    }
+    .img01{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    .img02{
+        grid-row: 2/3;
+        grid-column: 4/5;
+    }
+
+    .img03{
+        grid-row: 2/3;
+        grid-column: 6/7;
+    }
+
+    .img04{
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+
+    .img05{
+        grid-row: 3/4;
+        grid-column: 4/5;
+    }
+
+    .img06{
+        grid-row: 3/4;
+        grid-column: 6/7;
+    }
+
+    .img07{
+        grid-row: 4/5;
+        grid-column: 3/4;
+    }
+
+    .img08{
+        grid-row: 4/5;
+        grid-column: 5/6;
+    }
+
+    /* Bootstrap */
+
+    .card__formulario{
+        width: 35%;
+    }
+
+    /* Transformaciones */
+    .encabezado__logo:hover,.whatsapp:hover,.pie__redes div a:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .encabezado__menu ul li:hover{
+        border-color: rgb(190, 96, 53);
+        transition: 0.5s;
     }
 
     
-    
+
 }
+

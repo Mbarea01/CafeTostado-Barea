@@ -4,56 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	
+    <!-- Mi CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- Iconos -->
     <script src="https://kit.fontawesome.com/86f1c67918.js" crossorigin="anonymous"></script>
+
+    <!-- Icono de pagina -->
     <link rel="shortcut icon" href="../images/favicon.png">
-    <title>Nosotros</title>
+
+    <title>Cafe Tostado-Home</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid" >
-            <a class="navbar-brand img-fluid" href="../index.html">  <img src="../images/logo1.png" alt="LOGO" ></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="../index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="../pages/cafeterias.html">CAFETERIAS</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="../pages/marcasypuntosdeventa.html">MARCAS Y PUNTOS DE VENTA</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="../pages/Nosotros.html">NOSOTROS</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="../pages/contacto.html">CONTACTO</a>
-                </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+	<div class="contenedor">
+		<header class="encabezado">
+			<div class="encabezado__logo">
+				<a href="../index.html">
+					<img src="../images/logo1.png" alt="Logo de cafe Tostado">
+				</a>
+			</div>
+			<nav class="encabezado__menu">
+				<ul>
+					<li><a href="../index.html">HOME</a></li>
+					<li><a href="../pages/cafeterias.html">CAFETERIAS</a></li>
+					<li><a href="../pages/marcasypuntosdeventa.html">MARCAS Y PUNTOS DE VENTA</a></li>
+					<li><a href="../pages/Nosotros.html">NOSOTROS</a></li>
+					<li><a href="../pages/contacto.html">CONTACTO</a></li>
+				</ul>
+			</nav>
+		</header>
+
 
         <div class="whatsapp">
-            <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-3x" style="color: black; "></i></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-3x" style="color: black; width: "></i></a>
         </div>
 
-        <main >
-            <h1 class="titulo">NOSOTRAS</h1>
-        </main>
 
-        <section class="seccion">
-            <div class="Contenido">
-                <img src="../images/grupo.jpg" alt="grupo de amigas">
-                <p>Somos un grupo de amigas apasionadas por el cafe, nos gusta mucho conocer diferentes cafeterias y asi ir evaluandolas y sacando nuestras propias conclusiones. Estamos interesadas en todo el mundo del cafe, desde los diversos tipos que hay para prepararlos hasta los diferentes tipos de cafe que se encuentran en los diferentes paises.</p>
-            </div>
- 
-        </section>
+        <main class="principal" data-aos="fade-right">
+			<div class="principal__texto">
+				<h1> NOSOTROS </h1>
+			</div>
+		</main>
+		
+
+		<section class="seccion" data-aos="fade-left">
+			<div class="seccion__texto seccion__texto--orden">
+				<p class="seccion__titulo"> SOBRE NOSOTROS </p>
+				<p>Somos un grupo de amigas apasionadas por el cafe, nos gusta mucho conocer diferentes cafeterias y asi ir evaluandolas y sacando nuestras propias conclusiones. Estamos interesadas en todo el mundo del cafe, desde los diversos tipos que hay para prepararlos hasta los diferentes tipos de cafe que se encuentran en los diferentes paises.</p>
+			</div>
+			<div class="seccion__imagenes1 seccion__imagenes--orden">
+				<img src="../images/grupo.jpg" alt="grupo de amigas">
+			</div>
+		</section>
+
+		<section class="seccion" data-aos="fade-right">
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="../images/Barista1.jpg" class="d-block w-100" alt="Foto de Barista">
+				  </div>
+				  <div class="carousel-item">
+					<img src="../images/Barista2.jpg" class="d-block w-100" alt="Foto de barista">
+				  </div>
+				  <div class="carousel-item">
+					<img src="../images/Barista3.jpg" class="d-block w-100" alt="Foto de Barista">
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
+		</section>
+
     
 
 
@@ -76,5 +111,16 @@
             </div>
         </footer>
     </div>
+     <!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+	<!-- Animaciones -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration:1000
+		});
+	</script>
+	<!-- Iconos -->
+	<script src="https://kit.fontawesome.com/c08f3196dd.js" crossorigin="anonymous"></script>
 </body>
 </html>
