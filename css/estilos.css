@@ -1,3 +1,11 @@
+.contenedor, .principal, .seccion, .pie, .contenedor .encabezado, .seccion__marcas {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.contenedor, .principal, .seccion, .pie {
+  flex-direction: column; }
+
 * {
   margin: 0;
   padding: 0;
@@ -5,20 +13,15 @@
 
 .contenedor {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  gap: 1.9rem;
+  background-color: #e9cbb7; }
   .contenedor .whatsapp {
     display: none; }
   .contenedor .encabezado {
     width: 100%;
     background-color: #441d0b;
-    height: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+    height: 14rem; }
     .contenedor .encabezado .encabezado__logo {
       width: 40%; }
       .contenedor .encabezado .encabezado__logo a img {
@@ -31,17 +34,14 @@
       padding-bottom: 0; }
       .contenedor .encabezado .encabezado__menu ul li a {
         text-decoration: none;
+        text-align: center;
         font-size: 1rem;
         font-weight: 400;
         color: beige; }
 
 .principal {
   width: 90%;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  align-items: center;
-  justify-content: center; }
+  gap: 1.5rem; }
   .principal .principal__texto {
     text-align: center;
     font-size: 1.3rem; }
@@ -55,22 +55,19 @@
 .seccion {
   background-color: #301804;
   width: 90%;
-  display: flex;
-  flex-direction: column;
   gap: 1.5rem;
-  align-items: center;
   padding: 1rem 0; }
   .seccion .seccion__texto {
     text-align: center;
+    font-size: 1.3rem;
     color: beige;
-    font-size: 1.1rem;
     font-weight: 300;
     width: 70%; }
   .seccion .seccion__titulo {
+    text-align: center;
     font-size: 2rem;
     font-weight: 400;
-    margin-bottom: 0.5rem;
-    color: beige; }
+    margin-bottom: 0.5rem; }
   .seccion .seccion__imagenes img {
     width: 60%;
     display: block;
@@ -81,23 +78,18 @@
     margin: auto; }
 
 .pie {
-  background-color: #441d0b;
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  align-items: center;
-  gap: 1.25rem;
-  padding: 1rem 0;
-  color: white; }
+  background-color: #441d0b;
+  color: beige;
+  padding: 0.5rem 0; }
   .pie .derechos {
     display: flex;
-    color: white; }
+    color: beige; }
   .pie .fa-regular fa-copyright fa-1x {
     color: beige; }
 
 .seccion__marcas {
-  display: flex;
-  justify-content: center; }
+  width: 90%; }
   .seccion__marcas .marcas {
     width: 90%;
     font-weight: bold;
@@ -107,7 +99,7 @@
     justify-content: center;
     align-items: center;
     row-gap: 1rem;
-    color: beige; }
+    background-color: #301804; }
     .seccion__marcas .marcas .marcas__titulo {
       font-size: 2.5rem;
       font-weight: 400;
@@ -117,7 +109,7 @@
     .seccion__marcas .marcas .seccion__imagenes--marcas .img_descripcion {
       margin-top: 0.5rem;
       text-align: center;
-      color: whitesmoke; }
+      color: beige; }
 
 .container-fluid {
   /* Bootstrap */
@@ -127,8 +119,8 @@
   width: 70%; }
 
 .container .row div .card__boton {
-  width: 100%;
-  color: #441d0b; }
+  background-color: #8d5b31;
+  width: 100%; }
 
 .container .row div .formulario {
   background-color: #975439; }
@@ -159,38 +151,39 @@
   .seccion {
     width: 75%;
     align-content: center; }
-  .seccion__marcas .marcas {
-    grid-template-rows: 0.3fr repeat(4, 1fr);
-    grid-template-columns: auto auto;
-    grid-template-areas: "titulo titulo" "img01 img02" "img03 img04" "img05 img06" "img07 img08";
-    justify-content: center;
-    row-gap: 1rem; }
-    .seccion__marcas .marcas div a img {
-      width: 70%;
-      display: block;
-      margin: auto; }
-    .seccion__marcas .marcas .marcas__titulo {
-      grid-area: titulo; }
-    .seccion__marcas .marcas .img01 {
-      grid-area: img01; }
-    .seccion__marcas .marcas .img02 {
-      grid-area: img02; }
-    .seccion__marcas .marcas .img03 {
-      grid-area: img03; }
-    .seccion__marcas .marcas .img04 {
-      grid-area: img04; }
-    .seccion__marcas .marcas .img05 {
-      grid-area: img05; }
-    .seccion__marcas .marcas .img06 {
-      grid-area: img06; }
-    .seccion__marcas .marcas .img07 {
-      grid-area: img07; }
-    .seccion__marcas .marcas .img08 {
-      grid-area: img08; }
+  .seccion__marcas {
+    width: 75%; }
+    .seccion__marcas .marcas {
+      grid-template-rows: 0.3fr repeat(4, 1fr);
+      grid-template-columns: auto auto;
+      grid-template-areas: "titulo titulo" "img01 img02" "img03 img04" "img05 img06" "img07 img08";
+      justify-content: center;
+      row-gap: 1rem; }
+      .seccion__marcas .marcas div a img {
+        width: 70%;
+        display: block;
+        margin: auto; }
+      .seccion__marcas .marcas .marcas__titulo {
+        grid-area: titulo; }
+      .seccion__marcas .marcas .img01 {
+        grid-area: img01; }
+      .seccion__marcas .marcas .img02 {
+        grid-area: img02; }
+      .seccion__marcas .marcas .img03 {
+        grid-area: img03; }
+      .seccion__marcas .marcas .img04 {
+        grid-area: img04; }
+      .seccion__marcas .marcas .img05 {
+        grid-area: img05; }
+      .seccion__marcas .marcas .img06 {
+        grid-area: img06; }
+      .seccion__marcas .marcas .img07 {
+        grid-area: img07; }
+      .seccion__marcas .marcas .img08 {
+        grid-area: img08; }
   .container-fluid .card__formulario {
     width: 50%; } }
 
-<<<<<<< HEAD
 @media screen and (min-width: 992px) {
   .whatsapp {
     display: block;
@@ -198,34 +191,35 @@
     right: 0.2rem;
     bottom: 0.5rem;
     z-index: 2; }
-  .encabezado {
+  .contenedor .encabezado {
     height: 5rem;
     flex-direction: row;
     justify-content: space-around;
     position: sticky;
     top: 0;
     z-index: 2; }
-    .encabezado .encabezado__menu ul {
+    .contenedor .encabezado .encabezado__menu ul {
       display: flex;
       margin: 0;
       padding-left: 0;
       gap: 2rem; }
-      .encabezado .encabezado__menu ul li {
+      .contenedor .encabezado .encabezado__menu ul li {
         padding: 0.5rem;
         border: 1px solid #441d0b;
         border-radius: 1rem; }
-    .encabezado .encabezado__logo {
-      margin: 0; }
-      .encabezado .encabezado__logo a img {
+    .contenedor .encabezado .encabezado__logo {
+      margin: 0;
+      width: 30%; }
+      .contenedor .encabezado .encabezado__logo a img {
         width: 4rem;
         margin-bottom: 0; }
-  .principal {
+  .contenedor .principal {
     flex-direction: row; }
-    .principal .principal__texto {
+    .contenedor .principal .principal__texto {
       width: 50%; }
-    .principal .principal__img {
+    .contenedor .principal .principal__img {
       display: block;
-      width: 50%; }
+      width: 35%; }
   .seccion {
     flex-direction: row;
     padding: 2rem;
@@ -282,170 +276,3 @@
   .encabezado .encabezado__menu ul li:hover {
     border-color: beige;
     transition: 0.5s; } }
-=======
-/* Formulario */
-
-.formulario{
-	width:90%;
-	border-radius:1rem;
-	background-color:rgb(151, 84, 57);
-    color: beige;
-    padding: 0;
-}
-
-.formulario label{
-	width:90%;
-    border-radius:0.5rem;
-	font-weight:bold;
-	display:inline-block;
-}
-
-.formulario input[type="text"],
-.formulario input[type="email"]{
-	width:100%;
-    height: 2rem;
-	padding: 0.5rem 1rem;
-	border: 1px solid #f6f6f6;
-	border-radius:0.2rem;
-	background-color:#f6f6f6;
-	margin:0.6rem 0;
-	display: inline-block;
-    font-size: 0.5rem;
-}
-
-.formulario input[type="submit"]{
-	width:100%;
-	padding:0.5rem 1rem;
-	margin-top:0.5rem;
-	border:1px solid #000;
-	border-radius:0.8rem;
-	display:block;
-	color:#fff;
-	background-color:#000;
-} 
-
-@media screen and (min-width: 480px) and (max-width: 991px)  {
-
-    /* Icono de whatsapp */
-    .whatsapp{
-        display: block;
-        position: fixed;
-        right: 1rem;
-        bottom: 1rem;
-        z-index: 2;
-    }
-
-    /* Header */
-    .encabezado{
-        height: 14rem;
-        padding: 1rem;
-    }
-    .menu ul li a{
-        font-size: 1.5rem;
-    }
-    .logo a img{
-        width: 20%;
-    }
-
-    /* Main */
-    .principal{
-        width: 75%;
-    }
-    
-    .principal__img{
-        display: block;
-        width: 75%;
-    }
-
-    /* Section */
-    .seccion{
-        width: 75%;
-        align-content: center;
-    }
-    /* marcas */
-    .Marcas .grilla{
-        grid-template-rows: repeat(auto,1fr);
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    
-}
-
-@media screen and (min-width: 992px){
-    .whatsapp{
-        display: block;
-        position: fixed;
-        right: 2rem;
-        bottom: 2rem;
-        z-index: 3;
-    }
-
-    /* Header */
-    .encabezado{
-        height: 8rem;
-        padding: 1rem;
-        display: flex;
-        justify-content: space-around;
-    }
-    .menu ul{
-        display: flex;
-        gap: 1rem;
-    }
-    .menu ul li a{
-        font-size: 1.2rem;
-    }
-    .menu ul li:hover{
-        transform: scale(0.9);
-        box-shadow: black;
-    }
-    .logo{
-        width: 20%;
-    }
-    .logo a img{
-        width: 40%;
-    }
-
-    /* Main */
-    .principal{
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .principal p{
-        font-size: 1.5rem;
-    }
-    .intro_img{
-        display: block;
-        margin: auto;
-    }
-    
-    .titulo{
-        font-size: 5rem;
-    }
-    .Nombre--cafeteria{
-        font-size: 3rem;
-    }
-    
-    .grilla2 iframe,img{
-        width: 70%;
-        height: 100%;
-    }
-
-    .Marcas .grilla{
-        grid-template-rows: repeat(auto,1fr);
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .Contenido p{
-        font-size: 1.5rem;
-    }
-
-    .formulario{
-        font-size: 1.5rem;
-    }
-    .formulario input[type="text"],
-    .formulario input[type="email"]{
-	
-    font-size: 1rem;
-    }
-}
->>>>>>> 78dc05c16cbc549fde42953ff365099a6f0e43a8
